@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-14T23:40:45-04:00",
+  "title": "Design System: Atlas Luxury",
+  "extensions": {
+    "colorMeta": {
+      "obsidiana": {
+        "role": "neutral",
+        "displayName": "Obsidiana",
+        "canonical": "#0A0A0B",
+        "purpose": "Base do sistema; ocupa cerca de 70% de qualquer tela.",
+        "tonalRamp": [
+          "#242428",
+          "#404047",
+          "#5C5C65",
+          "#787884",
+          "#9696A0",
+          "#B5B5BB",
+          "#D3D3D7",
+          "#F2F2F3"
+        ]
+      },
+      "breu": {
+        "role": "neutral",
+        "displayName": "Breu",
+        "canonical": "#0D0E11",
+        "purpose": "Secao alternada — colecao e citacao.",
+        "tonalRamp": [
+          "#21242B",
+          "#3A3F4C",
+          "#545A6D",
+          "#6D758E",
+          "#8D94A8",
+          "#AEB3C1",
+          "#D0D2DB",
+          "#F1F1F4"
+        ]
+      },
+      "grafite": {
+        "role": "neutral",
+        "displayName": "Grafite",
+        "canonical": "#121317",
+        "purpose": "Superficie normativa de card.",
+        "tonalRamp": [
+          "#22232B",
+          "#3B3E4C",
+          "#55596C",
+          "#6E748D",
+          "#8F93A7",
+          "#AFB3C1",
+          "#D0D2DA",
+          "#F1F1F4"
+        ]
+      },
+      "carbono": {
+        "role": "neutral",
+        "displayName": "Carbono",
+        "canonical": "#1A1C21",
+        "purpose": "Superficie de card em hover: Grafite e o repouso, Carbono e a resposta. Um degrau tonal em vez de sombra.",
+        "tonalRamp": [
+          "#22242B",
+          "#3B404B",
+          "#555C6C",
+          "#6F778D",
+          "#8F96A7",
+          "#B0B4C0",
+          "#D0D3DA",
+          "#F1F2F4"
+        ]
+      },
+      "poco": {
+        "role": "neutral",
+        "displayName": "Poco",
+        "canonical": "#08080A",
+        "purpose": "Exclusivo do rodape; o degrau mais escuro da escada.",
+        "tonalRamp": [
+          "#22222A",
+          "#3C3C4B",
+          "#56566B",
+          "#70708C",
+          "#9090A6",
+          "#B0B0C0",
+          "#D0D0DA",
+          "#F1F1F4"
+        ]
+      },
+      "ouro-atlas": {
+        "role": "primary",
+        "displayName": "Ouro Atlas",
+        "canonical": "#C8A24C",
+        "purpose": "Unico acento: acao, preco, micro-rotulo, numeral, fio de marca.",
+        "tonalRamp": [
+          "#3B2E12",
+          "#675120",
+          "#94742D",
+          "#C0973B",
+          "#D0AF66",
+          "#DEC792",
+          "#EBDEBF",
+          "#F9F5EB"
+        ]
+      },
+      "champagne": {
+        "role": "primary",
+        "displayName": "Champagne",
+        "canonical": "#E6D2A8",
+        "purpose": "Resposta ao toque; nunca em repouso.",
+        "tonalRamp": [
+          "#3B2E11",
+          "#69511E",
+          "#96732B",
+          "#C39638",
+          "#D2AE63",
+          "#DFC691",
+          "#ECDDBE",
+          "#F9F5EB"
+        ]
+      },
+      "marfim": {
+        "role": "neutral",
+        "displayName": "Marfim",
+        "canonical": "#F4F1EA",
+        "purpose": "Texto primario e titulos. Branco morno, nunca #FFF.",
+        "tonalRamp": [
+          "#322B1A",
+          "#584C2E",
+          "#7F6D42",
+          "#A58D56",
+          "#BAA77C",
+          "#CEC1A2",
+          "#E2DAC8",
+          "#F6F4EE"
+        ]
+      },
+      "cinza-nav": {
+        "role": "neutral",
+        "displayName": "Cinza-nav",
+        "canonical": "#B9B5AC",
+        "purpose": "Links de menu em repouso.",
+        "tonalRamp": [
+          "#292823",
+          "#49463E",
+          "#696458",
+          "#888273",
+          "#A39E92",
+          "#BEBAB2",
+          "#D9D6D2",
+          "#F3F3F1"
+        ]
+      },
+      "nevoa": {
+        "role": "neutral",
+        "displayName": "Nevoa",
+        "canonical": "#9A968D",
+        "purpose": "Corpo de texto e subtitulo.",
+        "tonalRamp": [
+          "#292724",
+          "#47453F",
+          "#66635B",
+          "#858176",
+          "#A19D95",
+          "#BCBAB4",
+          "#D8D6D3",
+          "#F3F3F1"
+        ]
+      },
+      "nevoa-funda": {
+        "role": "neutral",
+        "displayName": "Nevoa funda",
+        "canonical": "#8C887F",
+        "purpose": "Corpo dentro de card.",
+        "tonalRamp": [
+          "#282724",
+          "#474540",
+          "#66635B",
+          "#848077",
+          "#A09D95",
+          "#BCB9B4",
+          "#D7D6D3",
+          "#F3F3F2"
+        ]
+      },
+      "ficha": {
+        "role": "neutral",
+        "displayName": "Ficha",
+        "canonical": "#7E7A72",
+        "purpose": "Especificacao tecnica e links de rodape.",
+        "tonalRamp": [
+          "#282724",
+          "#474540",
+          "#65625C",
+          "#848077",
+          "#A09C96",
+          "#BCB9B4",
+          "#D7D6D3",
+          "#F3F2F2"
+        ]
+      },
+      "rotulo": {
+        "role": "neutral",
+        "displayName": "Rotulo",
+        "canonical": "#6E6A62",
+        "purpose": "Micro-rotulo neutro e legenda.",
+        "tonalRamp": [
+          "#282724",
+          "#474540",
+          "#66625B",
+          "#858076",
+          "#A19D95",
+          "#BCB9B4",
+          "#D8D6D3",
+          "#F3F2F2"
+        ]
+      },
+      "marquise": {
+        "role": "neutral",
+        "displayName": "Marquise",
+        "canonical": "#5E5A52",
+        "purpose": "Texto da faixa em loop; textura, nao leitura.",
+        "tonalRamp": [
+          "#292724",
+          "#48453F",
+          "#67635A",
+          "#868175",
+          "#A29D94",
+          "#BDBAB3",
+          "#D8D6D2",
+          "#F3F3F1"
+        ]
+      },
+      "legal": {
+        "role": "neutral",
+        "displayName": "Legal",
+        "canonical": "#57534B",
+        "purpose": "Copyright e links juridicos.",
+        "tonalRamp": [
+          "#292723",
+          "#48453E",
+          "#686359",
+          "#878174",
+          "#A29D93",
+          "#BDBAB3",
+          "#D8D6D2",
+          "#F3F3F1"
+        ]
+      },
+      "filete": {
+        "role": "neutral",
+        "displayName": "Filete",
+        "canonical": "#3A3833",
+        "purpose": "Separador entre especificacoes; pontuacao grafica.",
+        "tonalRamp": [
+          "#292724",
+          "#48453F",
+          "#67635A",
+          "#868176",
+          "#A19E94",
+          "#BDBAB3",
+          "#D8D6D2",
+          "#F3F3F1"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Titulo do hero, duas linhas: primeira em Marfim, segunda em italico Ouro Atlas. Um por pagina."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Titulo de secao, sempre precedido de micro-rotulo."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Nome de veiculo, card de servico, item de etapa."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragrafo. Entrelinha 1.75 em secao, 1.7 em card. Medida de 470 a 620px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Micro-rotulo em caixa-alta, Ouro Atlas. Variante de interface usa 11.5-12.5px com 0.18em."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Bodoni 400, clamp(32px,3vw,42px), entrelinha 1. Sufixo (+, %) sempre em Ouro Atlas."
+      }
+    },
+    "shadows": [
+      {
+        "name": "state-glow",
+        "value": "0 0 0 1px #C8A24C",
+        "purpose": "Substituto da sombra. Sobre obsidiana a sombra preta nao aparece; elevacao de estado se comunica por fio quente. Nenhum box-shadow neutro no sistema."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-atlas",
+        "value": "cubic-bezier(0.22, 0.8, 0.28, 1)",
+        "purpose": "Easing unico do sistema. Entrada do hero e toda transicao de estado."
+      },
+      {
+        "name": "rise",
+        "value": "opacity 0->1, translateY(20px)->0 em 1.1s ease-atlas, escalonado 0.08s",
+        "purpose": "Entrada unica dos elementos do hero. Nao reutilizar como animacao de scroll generica."
+      },
+      {
+        "name": "marquee",
+        "value": "translateX(0 -> -50%) em 34s linear infinite",
+        "purpose": "Faixa em loop; 26s na versao mobile."
+      },
+      {
+        "name": "state",
+        "value": "160ms ease-atlas (entrada) / 90ms (:active)",
+        "purpose": "Hover e foco. Saida mais rapida que entrada; deslocamento maximo de 1px no eixo Y."
+      },
+      {
+        "name": "light-sweep",
+        "value": "translateX(-130% -> 130%), 1200ms no hero / 900ms no hover de card",
+        "purpose": "A luz do showroom passando sobre o carro. Unica metafora de movimento do sistema."
+      },
+      {
+        "name": "reveal",
+        "value": "opacity 0->1 + translateY(16px)->0 via animation-timeline: view()",
+        "purpose": "Entrada de conteudo que chega como lista. Nunca secao inteira."
+      },
+      {
+        "name": "gauge-sweep",
+        "value": "stroke-dashoffset 88 -> 0 via animation-timeline: scroll(root block)",
+        "purpose": "Mostrador do hero. Faixas 0-40vh, 18-72vh, 40-100vh: armam em sequencia pela primeira tela."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "hero-fold",
+        "value": "1180px"
+      },
+      {
+        "name": "nav-collapse",
+        "value": "1080px"
+      },
+      {
+        "name": "single-column",
+        "value": "620px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Acao primaria. Retangulo solido em Ouro Atlas com seta em traco.",
+      "html": "<button class=\"ds-btn-primary\">VER COLEÇÃO <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 12h15\"/><path d=\"m13 6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:14px;height:54px;padding:0 30px;background:#C8A24C;color:#0A0A0B;border:none;border-radius:0;font-family:'Jost','Futura',system-ui,sans-serif;font-size:12.5px;font-weight:500;letter-spacing:.18em;cursor:pointer;transition:background .2s cubic-bezier(0.22, 0.8, 0.28, 1),transform .2s cubic-bezier(0.22, 0.8, 0.28, 1)}.ds-btn-primary:hover{background:#E6D2A8;transform:translateY(-1px)}.ds-btn-primary:focus-visible{outline:none;box-shadow:0 0 0 1px #0A0A0B,0 0 0 3px #C8A24C}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Acao secundaria. Retangulo vazado; o icone permanece dourado mesmo com texto em Marfim.",
+      "html": "<button class=\"ds-btn-ghost\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#C8A24C\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"m10 8.5 6 3.5-6 3.5z\"/></svg> VER O SHOWROOM</button>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;gap:13px;height:54px;padding:0 26px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.22);border-radius:0;font-family:'Jost','Futura',system-ui,sans-serif;font-size:12.5px;font-weight:400;letter-spacing:.18em;cursor:pointer;transition:border-color .2s cubic-bezier(0.22, 0.8, 0.28, 1),color .2s cubic-bezier(0.22, 0.8, 0.28, 1)}.ds-btn-ghost:hover{border-color:#C8A24C;color:#E6D2A8}.ds-btn-ghost:focus-visible{outline:none;border-color:#C8A24C;box-shadow:0 0 0 2px rgba(200,162,76,.35)}"
+    },
+    {
+      "name": "Section Label",
+      "kind": "custom",
+      "refersTo": "label",
+      "description": "Micro-rotulo que abre toda secao, sempre antes do titulo.",
+      "html": "<div class=\"ds-label\"><span class=\"ds-label-rule\"></span>SÃO PAULO · CURADORIA DESDE 2007</div>",
+      "css": ".ds-label{display:flex;align-items:center;gap:14px;font-family:'Jost','Futura',system-ui,sans-serif;font-size:11px;letter-spacing:.30em;color:#C8A24C;text-transform:uppercase}.ds-label-rule{width:42px;height:1px;background:#C8A24C;flex-shrink:0}"
+    },
+    {
+      "name": "Vehicle Card",
+      "kind": "card",
+      "refersTo": "card-vehicle",
+      "description": "Componente de assinatura. Painel de foto mascarado, nome e preco na mesma linha de base, ficha separada por filete.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-media\"><span class=\"ds-badge\">RESERVADO</span></div><div class=\"ds-card-body\"><div class=\"ds-card-head\"><h3 class=\"ds-card-name\">Aston Martin DBS</h3><span class=\"ds-card-price\">R$ 2.480.000</span></div><div class=\"ds-card-spec\"><span>5.2 V12</span><span class=\"ds-sep\"></span><span>725 CV</span><span class=\"ds-sep\"></span><span>2 LUGARES</span></div><div class=\"ds-card-rule\"></div><div class=\"ds-card-foot\"><span class=\"ds-card-cta\">VER DETALHES <svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 12h15\"/><path d=\"m13 6 6 6-6 6\"/></svg></span><span class=\"ds-card-meta\">2022 · 8.400 km</span></div></div></article>",
+      "css": ".ds-card{width:340px;background:#121317;border:1px solid rgba(244,241,234,.08);border-radius:0;font-family:'Jost','Futura',system-ui,sans-serif}.ds-card-media{position:relative;height:200px;background:radial-gradient(85% 80% at 50% 105%,rgba(200,162,76,.22) 0%,rgba(10,10,11,0) 62%),#0A0A0B}.ds-badge{position:absolute;left:18px;top:18px;border:1px solid rgba(200,162,76,.45);background:rgba(10,10,11,.55);padding:6px 12px;font-size:9.5px;letter-spacing:.22em;color:#C8A24C}.ds-card-body{padding:26px;display:flex;flex-direction:column;gap:18px}.ds-card-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}.ds-card-name{margin:0;font-family:'Bodoni Moda',Didot,Georgia,serif;font-size:21px;font-weight:400;color:#F4F1EA}.ds-card-price{font-family:'Bodoni Moda',Didot,Georgia,serif;font-size:19px;color:#C8A24C;white-space:nowrap}.ds-card-spec{display:flex;align-items:center;gap:18px;font-variant-numeric:tabular-nums lining-nums;font-size:12px;letter-spacing:.10em;color:#7E7A72}.ds-sep{width:1px;height:11px;align-self:center;flex-shrink:0;background:#3A3833}.ds-card-rule{height:1px;background:rgba(244,241,234,.08)}.ds-card-foot{display:flex;align-items:center;justify-content:space-between}.ds-card-cta{display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.18em;color:#C8A24C;cursor:pointer;transition:color .2s cubic-bezier(0.22, 0.8, 0.28, 1)}.ds-card-cta:hover{color:#E6D2A8}.ds-card-meta{font-size:11.5px;color:#6E6A62}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Barra de 92px sem fundo proprio, flutuando sobre a atmosfera do hero.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" class=\"ds-nav-link ds-is-active\">COLEÇÃO</a><a href=\"#\" class=\"ds-nav-link\">SERVIÇOS</a><a href=\"#\" class=\"ds-nav-link\">PROCESSO</a><a href=\"#\" class=\"ds-nav-link\">CONTATO</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:42px;height:92px;padding:0 32px;background:#0A0A0B;border-bottom:1px solid rgba(244,241,234,.07)}.ds-nav-link{position:relative;font-family:'Jost','Futura',system-ui,sans-serif;font-size:12px;letter-spacing:.18em;color:#B9B5AC;text-decoration:none;padding-bottom:6px;transition:color .2s cubic-bezier(0.22, 0.8, 0.28, 1)}.ds-nav-link:hover{color:#E6D2A8}.ds-nav-link.ds-is-active{color:#F4F1EA}.ds-nav-link.ds-is-active::after{content:\"\";position:absolute;left:0;right:0;bottom:0;height:1px;background:#C8A24C}.ds-nav-link:focus-visible{outline:none;color:#E6D2A8;box-shadow:0 2px 0 0 #C8A24C}"
+    },
+    {
+      "name": "Hamburger",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Menu mobile abaixo de 1080px. As duas linhas sao assimetricas de proposito — e a assinatura do menu.",
+      "html": "<button class=\"ds-burger\" aria-label=\"Abrir menu\"><span></span><span></span></button>",
+      "css": ".ds-burger{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:7px;width:46px;height:46px;background:none;border:none;border-radius:0;cursor:pointer;padding:0}.ds-burger span{display:block;height:1px;transition:width .2s cubic-bezier(0.22, 0.8, 0.28, 1)}.ds-burger span:first-child{width:26px;background:#F4F1EA}.ds-burger span:last-child{width:18px;background:#C8A24C}.ds-burger:hover span:last-child{width:26px}.ds-burger:focus-visible{outline:1px solid #C8A24C;outline-offset:4px}"
+    },
+    {
+      "name": "Stat",
+      "kind": "custom",
+      "refersTo": "display",
+      "description": "Numeral do hero. Numero em Marfim, sufixo em Ouro Atlas — o dado e neutro, a unidade e da marca.",
+      "html": "<div class=\"ds-stat\"><div class=\"ds-stat-num\">640<span>+</span></div><div class=\"ds-stat-cap\">CARROS ENTREGUES</div></div>",
+      "css": ".ds-stat{display:flex;flex-direction:column;gap:8px}.ds-stat-num{font-family:'Bodoni Moda',Didot,Georgia,serif;font-size:42px;line-height:1;color:#F4F1EA}.ds-stat-num span{color:#C8A24C}.ds-stat-cap{font-family:'Jost','Futura',system-ui,sans-serif;font-size:10.5px;letter-spacing:.24em;color:#6E6A62}"
+    },
+    {
+      "name": "Instrument Gauge",
+      "kind": "custom",
+      "refersTo": "display",
+      "description": "Mostrador do hero. Bezel de 12 ticks e arco que varre de 12% a 100% conforme o leitor percorre a primeira tela.",
+      "html": "<div class=\"ds-stat-read\"><svg class=\"ds-gauge\" viewBox=\"0 0 40 40\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"20\" cy=\"20\" r=\"17\" stroke=\"rgba(200,162,76,0.22)\" stroke-width=\"4.6\" pathLength=\"100\" stroke-dasharray=\"1.7 6.63\"/><circle cx=\"20\" cy=\"20\" r=\"12.4\" stroke=\"#C8A24C\" stroke-width=\"1.3\" pathLength=\"100\" stroke-dasharray=\"100\" stroke-dashoffset=\"34\" transform=\"rotate(-90 20 20)\"/></svg><span class=\"ds-stat-num\">640<i>+</i></span></div>",
+      "css": ".ds-stat-read{display:flex;align-items:center;gap:10px}.ds-gauge{width:26px;height:26px;flex-shrink:0;overflow:visible}.ds-stat-num{font-family:'Bodoni Moda',Didot,Georgia,serif;font-size:42px;line-height:1;color:#F4F1EA;font-variant-numeric:tabular-nums lining-nums}.ds-stat-num i{font-style:normal;color:#C8A24C}"
+    },
+    {
+      "name": "Marquee",
+      "kind": "custom",
+      "refersTo": "label",
+      "description": "Unico movimento continuo do sistema; tudo mais e entrada unica.",
+      "html": "<div class=\"ds-marquee\"><div class=\"ds-marquee-track\"><span>CURADORIA FECHADA</span><b>•</b><span>LAUDO DE 137 PONTOS</span><b>•</b><span>CONCIERGE 24H</span><b>•</b><span>CURADORIA FECHADA</span><b>•</b><span>LAUDO DE 137 PONTOS</span><b>•</b><span>CONCIERGE 24H</span><b>•</b></div></div>",
+      "css": "@keyframes ds-slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}.ds-marquee{height:66px;display:flex;align-items:center;overflow:hidden;background:#0D0E11;border-top:1px solid rgba(200,162,76,.16);border-bottom:1px solid rgba(200,162,76,.16)}.ds-marquee-track{display:flex;gap:46px;padding-left:46px;white-space:nowrap;font-family:'Bodoni Moda',Didot,Georgia,serif;font-size:17px;letter-spacing:.30em;color:#5E5A52;animation:ds-slide 34s linear infinite}.ds-marquee-track b{color:#C8A24C;font-weight:400}@media (prefers-reduced-motion:reduce){.ds-marquee-track{animation:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Showroom à meia-luz",
+    "overview": "O sistema se comporta como um showroom depois do expediente. O salão está escuro; uma luz dirigida por vez acende sobre o que importa, e tudo o mais permanece em sombra. É por isso que o fundo é obsidiana quase absoluta, que o dourado aparece poucas vezes por tela, e que as fotografias não entram como retângulo recortado: elas se dissolvem no escuro pelas bordas, como carroceria saindo do cone de luz.\n\nA densidade é baixa e deliberada. Respiro largo entre seções (até 112px verticais), medida de texto curta (470-620px) e hierarquia construída por contraste de peso, não por quantidade de elementos. A superfície não tem relevo: nenhum canto arredondado, nenhuma sombra em todo o projeto. A profundidade é feita de quatro valores de quase-preto empilhados e de um fio de 1px.\n\nA personalidade vem do par tipográfico: uma didone de alto contraste dizendo os substantivos e uma geométrica de traço fino dizendo as instruções. O ouro é envelhecido, não metálico, e o branco é marfim, não branco de tela.",
+    "keyCharacteristics": [
+      "Campo obsidiana ocupando a maior parte de qualquer tela, com quatro degraus de quase-preto como única fonte de profundidade",
+      "Um único acento — ouro envelhecido — reservado a ação, preço e micro-rótulo",
+      "Forma totalmente reta: zero raio, zero sombra em repouso — o movimento vive nos estados. Antigo: transição no estado de repouso",
+      "Didone para substantivo, geométrica para instrução; nunca o inverso",
+      "Tracking invertido: quanto maior o texto, mais apertado; quanto menor, mais espaçado",
+      "Fotografia mascarada em gradiente, nunca emoldurada",
+      "Figuras tabulares em todo contexto de dado: preco, ficha e estatistica alinham digito a digito",
+      "O hero le o progresso do leitor como um painel de instrumentos, nao como um relogio",
+      "Ícones sempre em traço, nunca preenchidos; nenhum emoji"
+    ],
+    "rules": [
+      {
+        "name": "The One Voice Rule",
+        "section": "colors",
+        "body": "Existe um acento e apenas um. Ouro Atlas cobre no máximo 10% de qualquer tela; nenhuma tela futura introduz uma segunda cor de destaque — nem verde de disponibilidade, nem vermelho de urgência. Estado se comunica por texto, fio ou opacidade."
+      },
+      {
+        "name": "The Champagne-Only-On-Touch Rule",
+        "section": "colors",
+        "body": "#E6D2A8 não existe em repouso. Se ele aparece numa tela estática, é erro."
+      },
+      {
+        "name": "The Warm Black Rule",
+        "section": "colors",
+        "body": "Nenhum preto puro, nenhum branco puro. Todo neutro carrega matiz morno; #000 e #FFF estão fora do sistema."
+      },
+      {
+        "name": "The Two Voices Rule",
+        "section": "typography",
+        "body": "Bodoni diz substantivo: nome, número, título, citação. Jost diz instrução: rótulo, corpo, botão, menu. Um botão em Bodoni ou um título de seção em Jost quebra o sistema."
+      },
+      {
+        "name": "The Tracking Inversion Rule",
+        "section": "typography",
+        "body": "Quanto maior o texto, mais apertado o tracking (-0.012em no display); quanto menor, mais aberto (0.30em no rótulo de 11px)."
+      },
+      {
+        "name": "The Instrument Figures Rule",
+        "section": "typography",
+        "body": "Todo contexto de dado usa font-variant-numeric: tabular-nums lining-nums. Os tres precos tem 7 digitos e por isso medem exatamente a mesma largura, alinhando de card para card. Texto corrido fica com figuras proporcionais."
+      },
+      {
+        "name": "The Idle-Never-Zero Rule",
+        "section": "elevation",
+        "body": "Todo estado parado precisa ser bonito sozinho. O mostrador descansa em 12% preenchido, nao em zero: e assim que o fallback estatico parece intencional em vez de quebrado."
+      },
+      {
+        "name": "The Italic-Is-A-Turn Rule",
+        "section": "typography",
+        "body": "O itálico da didone marca a virada de sentido — a segunda linha do hero, a citação — e nada mais."
+      },
+      {
+        "name": "The No-Container Rule",
+        "section": "layout",
+        "body": "Nada de margin: 0 auto com largura máxima na página de marketing. A largura é da tela; o conforto de leitura vem da medida do parágrafo."
+      },
+      {
+        "name": "The Four-Width Rule",
+        "section": "layout",
+        "body": "Uma tela só está pronta depois de verificada em 1440, 1100, 768 e 390. Scroll horizontal em qualquer uma delas é defeito."
+      },
+      {
+        "name": "The Square Field Rule",
+        "section": "elevation",
+        "body": "Repouso é plano e reto. Nenhum elemento nasce elevado."
+      },
+      {
+        "name": "The Black-Shadow-Is-Invisible Rule",
+        "section": "elevation",
+        "body": "Sobre obsidiana, sombra preta não faz nada — só suja. Elevação de estado responde com brilho quente ou com o fio clareando, nunca com box-shadow neutro."
+      },
+      {
+        "name": "The No-Radius Rule",
+        "section": "shapes",
+        "body": "border-radius é zero. Sem exceção, em qualquer tela, para qualquer componente."
+      },
+      {
+        "name": "The Hairline-Over-Fill Rule",
+        "section": "shapes",
+        "body": "Quando um elemento precisa de limite, ele ganha fio de 1px, não preenchimento. Preenchimento sólido é privilégio do botão primário."
+      }
+    ],
+    "dos": [
+      "Do manter Ouro Atlas em no máximo 10% da tela e usá-lo para ação, preço, micro-rótulo e numeral de etapa.",
+      "Do abrir toda seção com micro-rótulo de 11px em caixa-alta com tracking 0.30em antes do título.",
+      "Do construir profundidade empilhando #0A0A0B, #0D0E11 e #121317 com fio de 1px entre planos.",
+      "Do dissolver fotografia por máscara de gradiente ou cobri-la com gradiente escuro; ela tem que pertencer ao campo.",
+      "Do desenhar ícone em traço de 1.25px sobre grade de 24px.",
+      "Do limitar parágrafo a 470-620px de medida mesmo com a seção em largura total.",
+      "Do usar figuras tabulares em preco, ficha, quilometragem e estatistica, e so nesses lugares.",
+      "Do manter uma unica curva de easing (--ease-atlas) e saida mais rapida que entrada.",
+      "Do deixar todo estado parado bonito sozinho: o mostrador descansa em 12%, nunca em zero.",
+      "Do verificar toda tela em 1440, 1100, 768 e 390 antes de considerá-la pronta."
+    ],
+    "donts": [
+      "Don't usar border-radius. Em nenhum componente, em nenhuma tela.",
+      "Don't usar box-shadow neutro — sobre obsidiana ele não aparece e só suja o campo.",
+      "Don't introduzir uma segunda cor de acento, inclusive verde de disponibilidade ou vermelho de urgência.",
+      "Don't usar #000 ou #FFF; todo neutro do sistema é morno.",
+      "Don't compor botão em Bodoni nem título de seção em Jost.",
+      "Don't usar ícone preenchido, ícone de biblioteca colorido ou emoji em qualquer lugar da marca.",
+      "Don't colocar foto clara, diurna ou de carro claro — o sistema inteiro assume meia-luz.",
+      "Don't centralizar a página num container de largura máxima; a landing é full-bleed por definição.",
+      "Don't revelar secao inteira por fade ao rolar. Entrada e so para conteudo que chega como lista.",
+      "Don't transicionar propriedade que dispara layout (width, height, top, left, margin).",
+      "Don't fazer um mostrador representar o valor da estatistica: o arco mede o progresso do leitor.",
+      "Don't introduzir uma terceira geometria circular. Sao duas: o escudo e o bezel.",
+      "Don't usar itálico como ênfase genérica; ele marca virada de sentido e nada mais."
+    ]
+  }
+}

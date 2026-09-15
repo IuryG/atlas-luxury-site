@@ -1,0 +1,24 @@
+{
+  "artboards": [
+    { "file": "Identity.dc.html", "x": 0, "y": 0, "w": 1240, "h": 2010, "title": "Identidade visual", "expand": "fill" },
+    { "file": "Main.dc.html", "x": 1400, "y": 0, "w": 1440, "h": 4980, "title": "Landing page — desktop 1440", "expand": "fill" },
+    { "file": "Mobile.dc.html", "x": 3000, "y": 0, "w": 390, "h": 5700, "title": "Landing page — mobile 390" }
+  ],
+  "annotations": [
+    {
+      "id": "direcao",
+      "x": 0,
+      "y": -300,
+      "w": 620,
+      "text": "ATLAS LUXURY — direção visual\nObsidiana (#0A0A0B) como base, Ouro Atlas (#C8A24C) como único destaque.\nBodoni Moda no display + Jost na interface. Símbolo: escudo com A e linha de meridiano."
+    },
+    {
+      "id": "fotos",
+      "x": 1400,
+      "y": -300,
+      "w": 660,
+      "text": "Fotos do Unsplash (licença livre, uso comercial liberado): Bentley Flying Spur no hero, Aston Martin DBS, Rolls-Royce Phantom e Porsche 911.\nOs nomes e as fichas dos cards seguem os carros que aparecem nas fotos.\n\nAs duas primeiras pranchas são fluidas: expanda para ver o layout se adaptar (nav vira menu em ≤1080, grades caem para 2 e depois 1 coluna, o carro do hero desce para baixo do texto em ≤1180)."
+    }
+  ],
+  "launch": { "view": "canvas" }
+}

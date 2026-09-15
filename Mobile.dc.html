@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap">
+  <style>
+    body { margin: 0; background: #0A0A0B; color: #F4F1EA;
+           font-family: 'Jost', 'Futura', 'Century Gothic', system-ui, sans-serif;
+           -webkit-font-smoothing: antialiased; }
+    a { color: #C8A24C; text-decoration: none; }
+    a:hover { color: #E6D2A8; }
+    .grain { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E"); }
+    @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .marquee { animation: slide 26s linear infinite; }
+    ::selection { background: rgba(200,162,76,0.28); color: #F4F1EA; }
+    @media (prefers-reduced-motion: reduce) { .marquee { animation: none; } }
+    .price, .spec, .meta { font-variant-numeric: tabular-nums lining-nums;
+      font-feature-settings: "tnum" 1, "lnum" 1; }
+    .fio { width: 1px; height: 10px; align-self: center; flex-shrink: 0; background: #3A3833; }
+    html { color-scheme: dark; scrollbar-width: thin; scrollbar-color: rgba(200,162,76,0.38) #0A0A0B; }
+    .hero-photo { display: block; width: 100%; height: auto;
+      -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 16%, #000 74%, transparent 100%);
+      mask-image: linear-gradient(180deg, transparent 0%, #000 16%, #000 74%, transparent 100%); }
+  </style>
+</helmet>
+
+<div style="width: 100%; max-width: 390px; margin: 0 auto; background: #0A0A0B; box-sizing: border-box; overflow-x: hidden">
+
+  <!-- HERO -->
+  <div style="position: relative; height: 820px; overflow: hidden; background: #0A0A0B">
+    <div style="position: absolute; inset: 0; background: radial-gradient(110% 55% at 62% 74%, rgba(200,162,76,0.22) 0%, rgba(200,162,76,0.05) 40%, rgba(10,10,11,0) 70%)"></div>
+    <div class="grain" style="position: absolute; inset: 0; opacity: 0.055; mix-blend-mode: overlay"></div>
+
+    <div style="position: absolute; left: 0; right: 0; bottom: 122px">
+      <img class="hero-photo" src="hero-bentley.jpg" alt="Bentley Flying Spur cinza-grafite fotografado de frente sob luz noturna">
+    </div>
+
+    <!-- NAV -->
+    <div style="position: relative; height: 68px; display: flex; align-items: center; justify-content: space-between; padding: 0 22px; border-bottom: 1px solid rgba(244,241,234,0.07)">
+      <div style="display: flex; align-items: center; gap: 11px">
+        <svg width="23" height="26" viewBox="0 0 64 72" fill="none" stroke="#C8A24C" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M32 4 60 14v24c0 15.5-12 25.5-28 31C16 63.5 4 53.5 4 38V14z"/>
+          <path d="M21 51 32 21l11 30"/>
+          <path d="M25.2 39h13.6"/>
+        </svg>
+        <div style="display: flex; flex-direction: column; gap: 2px">
+          <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 15px; letter-spacing: 0.18em; font-weight: 500">ATLAS</div>
+          <div style="font-size: 6.5px; letter-spacing: 0.40em; color: #C8A24C">LUXURY</div>
+        </div>
+      </div>
+      <div style="width: 46px; height: 46px; display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 7px">
+        <div style="width: 26px; height: 1px; background: #F4F1EA"></div>
+        <div style="width: 18px; height: 1px; background: #C8A24C"></div>
+      </div>
+    </div>
+
+    <!-- TEXTO -->
+    <div style="position: relative; padding: 62px 22px 0 22px; display: flex; flex-direction: column">
+      <div style="display: flex; align-items: center; gap: 12px; font-size: 9.5px; letter-spacing: 0.26em; color: #C8A24C">
+        <div style="width: 26px; height: 1px; background: #C8A24C"></div>
+        S&Atilde;O PAULO &middot; DESDE 2007
+      </div>
+      <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 44px; line-height: 1.06; font-weight: 400; letter-spacing: -0.012em; margin-top: 20px">O extraordin&aacute;rio</div>
+      <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 44px; line-height: 1.06; font-weight: 400; font-style: italic; color: #C8A24C">tem endere&ccedil;o.</div>
+      <div style="font-size: 15px; line-height: 1.8; color: #9A968D; margin-top: 20px; text-wrap: pretty">Superesportivos, GTs e cl&aacute;ssicos selecionados um a um, com laudo de 137 pontos e hist&oacute;rico documentado.</div>
+      <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 30px">
+        <div style="background: #C8A24C; color: #0A0A0B; height: 54px; display: flex; align-items: center; justify-content: center; gap: 14px; font-size: 12.5px; letter-spacing: 0.18em; font-weight: 500">VER COLE&Ccedil;&Atilde;O
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0A0A0B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg>
+        </div>
+        <div style="border: 1px solid rgba(244,241,234,0.22); height: 54px; display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 12.5px; letter-spacing: 0.18em; box-sizing: border-box">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C8A24C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 6 3.5-6 3.5z"/></svg>
+          VER O SHOWROOM
+        </div>
+      </div>
+    </div>
+
+    <div style="position: absolute; left: 22px; right: 22px; bottom: 34px; display: flex; align-items: flex-end; justify-content: space-between">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 30px; line-height: 1">18</div>
+        <div style="font-size: 8.5px; letter-spacing: 0.20em; color: #6E6A62">ANOS</div>
+      </div>
+      <div style="width: 1px; height: 34px; background: rgba(200,162,76,0.28)"></div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 30px; line-height: 1">640<span style="color: #C8A24C">+</span></div>
+        <div style="font-size: 8.5px; letter-spacing: 0.20em; color: #6E6A62">ENTREGUES</div>
+      </div>
+      <div style="width: 1px; height: 34px; background: rgba(200,162,76,0.28)"></div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 30px; line-height: 1">97<span style="color: #C8A24C">%</span></div>
+        <div style="font-size: 8.5px; letter-spacing: 0.20em; color: #6E6A62">RETORNAM</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MARQUEE -->
+  <div style="height: 54px; background: #0D0E11; border-top: 1px solid rgba(200,162,76,0.16); border-bottom: 1px solid rgba(200,162,76,0.16); overflow: hidden; display: flex; align-items: center">
+    <div class="marquee" style="display: flex; gap: 30px; white-space: nowrap; font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 13px; letter-spacing: 0.26em; color: #5E5A52; padding-left: 30px">
+      <span>CURADORIA FECHADA</span><span style="color: #C8A24C">&bull;</span>
+      <span>LAUDO DE 137 PONTOS</span><span style="color: #C8A24C">&bull;</span>
+      <span>CONCIERGE 24H</span><span style="color: #C8A24C">&bull;</span>
+      <span>CURADORIA FECHADA</span><span style="color: #C8A24C">&bull;</span>
+      <span>LAUDO DE 137 PONTOS</span><span style="color: #C8A24C">&bull;</span>
+      <span>CONCIERGE 24H</span><span style="color: #C8A24C">&bull;</span>
+    </div>
+  </div>
+
+  <!-- SERVICOS -->
+  <div style="padding: 72px 22px; background: #0A0A0B; display: flex; flex-direction: column; gap: 36px">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <div style="font-size: 9.5px; letter-spacing: 0.26em; color: #C8A24C">COMO TRABALHAMOS</div>
+      <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 38px; line-height: 1.1; font-weight: 400; text-wrap: balance">O carro &eacute; s&oacute; metade do neg&oacute;cio</div>
+      <div style="font-size: 15px; line-height: 1.75; color: #9A968D; text-wrap: pretty">A outra metade &eacute; o que acontece antes e depois da chave trocar de m&atilde;o.</div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <div style="background: #121317; border: 1px solid rgba(200,162,76,0.14); padding: 28px 24px; display: flex; flex-direction: column; gap: 16px">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8A24C" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h10l4 5.5-9 11.5L3 9z"/><path d="M3 9h18"/><path d="M7 3.5 12 20.5 17 3.5"/></svg>
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 21px">Curadoria fechada</div>
+        <div style="font-size: 14.5px; line-height: 1.75; color: #8C887F; text-wrap: pretty">Menos de um em cada dez carros avaliados entra no showroom.</div>
+      </div>
+      <div style="background: #121317; border: 1px solid rgba(200,162,76,0.14); padding: 28px 24px; display: flex; flex-direction: column; gap: 16px">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8A24C" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8 20 5.8v6.1c0 4.5-3.2 7.9-8 9.3-4.8-1.4-8-4.8-8-9.3V5.8z"/><path d="m8.6 11.9 2.5 2.5 4.4-5"/></svg>
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 21px">Laudo de 137 pontos</div>
+        <div style="font-size: 14.5px; line-height: 1.75; color: #8C887F; text-wrap: pretty">Auditoria de perito independente, entregue junto com a proposta.</div>
+      </div>
+      <div style="background: #121317; border: 1px solid rgba(200,162,76,0.14); padding: 28px 24px; display: flex; flex-direction: column; gap: 16px">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8A24C" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 19h18.8"/><path d="M20 19a8 8 0 0 0-16 0"/><path d="M12 6.6V4.8"/><circle cx="12" cy="3.6" r="1.1"/></svg>
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 21px">Concierge dedicado</div>
+        <div style="font-size: 14.5px; line-height: 1.75; color: #8C887F; text-wrap: pretty">Um gestor s&oacute; seu, do primeiro contato &agrave; entrega.</div>
+      </div>
+      <div style="background: #121317; border: 1px solid rgba(200,162,76,0.14); padding: 28px 24px; display: flex; flex-direction: column; gap: 16px">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8A24C" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.8"/><path d="M9 13.7 8 21.2l4-2.1 4 2.1-1-7.5"/></svg>
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 21px">Garantia Atlas</div>
+        <div style="font-size: 14.5px; line-height: 1.75; color: #8C887F; text-wrap: pretty">12 meses de motor e c&acirc;mbio, com rede credenciada nas capitais.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COLECAO -->
+  <div style="padding: 72px 22px; background: #0D0E11; display: flex; flex-direction: column; gap: 30px">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <div style="font-size: 9.5px; letter-spacing: 0.26em; color: #C8A24C">NO SHOWROOM ESTA SEMANA</div>
+      <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 38px; line-height: 1.1; font-weight: 400">Cole&ccedil;&atilde;o em destaque</div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <div style="background: #121317; border: 1px solid rgba(244,241,234,0.08); display: flex; flex-direction: column">
+        <div style="position: relative; height: 196px; overflow: hidden; background: #0A0A0B">
+          <img src="car-dbs.jpg" alt="Aston Martin DBS cinza-grafite na frente de um showroom ao anoitecer" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block">
+          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,10,11,0.10) 0%, rgba(10,10,11,0.55) 100%)"></div>
+          <div class="grain" style="position: absolute; inset: 0; opacity: 0.05; mix-blend-mode: overlay"></div>
+          <div style="position: absolute; left: 16px; top: 16px; border: 1px solid rgba(200,162,76,0.45); background: rgba(10,10,11,0.55); padding: 6px 11px; font-size: 9px; letter-spacing: 0.20em; color: #C8A24C">RESERVADO</div>
+        </div>
+        <div style="padding: 24px 22px 26px 22px; display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px">
+            <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 20px">Aston Martin DBS</div>
+            <div class="price" style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 17px; color: #C8A24C; white-space: nowrap">R$ 2.480.000</div>
+          </div>
+          <div class="spec" style="display: flex; gap: 14px; font-size: 11.5px; letter-spacing: 0.08em; color: #7E7A72">
+            <span>5.2 V12</span><span class="fio" aria-hidden="true"></span><span>725 CV</span><span class="fio" aria-hidden="true"></span><span>2022 &middot; 8.400 KM</span>
+          </div>
+          <div style="height: 1px; background: rgba(244,241,234,0.08)"></div>
+          <div style="display: flex; align-items: center; gap: 10px; font-size: 11px; letter-spacing: 0.18em; color: #C8A24C; height: 24px">VER DETALHES
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C8A24C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: #121317; border: 1px solid rgba(244,241,234,0.08); display: flex; flex-direction: column">
+        <div style="position: relative; height: 196px; overflow: hidden; background: #0A0A0B">
+          <img src="car-phantom.jpg" alt="Rolls-Royce Phantom preto parado em uma rua de cidade" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block">
+          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,10,11,0.10) 0%, rgba(10,10,11,0.55) 100%)"></div>
+          <div class="grain" style="position: absolute; inset: 0; opacity: 0.05; mix-blend-mode: overlay"></div>
+        </div>
+        <div style="padding: 24px 22px 26px 22px; display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px">
+            <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 20px">Rolls-Royce Phantom</div>
+            <div class="price" style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 17px; color: #C8A24C; white-space: nowrap">R$ 4.900.000</div>
+          </div>
+          <div class="spec" style="display: flex; gap: 14px; font-size: 11.5px; letter-spacing: 0.08em; color: #7E7A72">
+            <span>6.75 V12</span><span class="fio" aria-hidden="true"></span><span>571 CV</span><span class="fio" aria-hidden="true"></span><span>2021 &middot; 12.100 KM</span>
+          </div>
+          <div style="height: 1px; background: rgba(244,241,234,0.08)"></div>
+          <div style="display: flex; align-items: center; gap: 10px; font-size: 11px; letter-spacing: 0.18em; color: #C8A24C; height: 24px">VER DETALHES
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C8A24C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="border: 1px solid rgba(200,162,76,0.35); height: 52px; display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 11.5px; letter-spacing: 0.18em; color: #C8A24C">VER INVENT&Aacute;RIO COMPLETO
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C8A24C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg>
+    </div>
+  </div>
+
+  <!-- PROCESSO -->
+  <div style="padding: 72px 22px; background: #0A0A0B; display: flex; flex-direction: column; gap: 34px">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <div style="font-size: 9.5px; letter-spacing: 0.26em; color: #C8A24C">O PROCESSO</div>
+      <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 38px; line-height: 1.1; font-weight: 400">Do primeiro contato &agrave; sua garagem</div>
+      <div style="font-size: 15px; line-height: 1.75; color: #8C887F; text-wrap: pretty">Quatro etapas, um interlocutor s&oacute;. Em m&eacute;dia, 19 dias at&eacute; a entrega.</div>
+    </div>
+    <div style="display: flex; flex-direction: column">
+      <div style="display: flex; gap: 20px; padding-bottom: 22px; border-bottom: 1px solid rgba(244,241,234,0.08)">
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 24px; color: #C8A24C; width: 34px; flex-shrink: 0">01</div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="font-size: 17px">Conversa reservada</div>
+          <div style="font-size: 14px; line-height: 1.7; color: #8C887F; text-wrap: pretty">Sem formul&aacute;rio, sem cadastro, sem lista de e-mail.</div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid rgba(244,241,234,0.08)">
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 24px; color: #C8A24C; width: 34px; flex-shrink: 0">02</div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="font-size: 17px">Curadoria e laudo</div>
+          <div style="font-size: 14px; line-height: 1.7; color: #8C887F; text-wrap: pretty">De tr&ecirc;s a cinco op&ccedil;&otilde;es, cada uma com hist&oacute;rico completo.</div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid rgba(244,241,234,0.08)">
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 24px; color: #C8A24C; width: 34px; flex-shrink: 0">03</div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="font-size: 17px">Test drive privado</div>
+          <div style="font-size: 14px; line-height: 1.7; color: #8C887F; text-wrap: pretty">Showroom fechado para voc&ecirc;, no hor&aacute;rio que preferir.</div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 20px; padding-top: 22px">
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 24px; color: #C8A24C; width: 34px; flex-shrink: 0">04</div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <div style="font-size: 17px">Entrega e p&oacute;s-venda</div>
+          <div style="font-size: 14px; line-height: 1.7; color: #8C887F; text-wrap: pretty">Transporte fechado at&eacute; a sua garagem, com o mesmo gestor.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CITACAO -->
+  <div style="position: relative; padding: 68px 22px; background: #0D0E11; overflow: hidden">
+    <div style="position: absolute; inset: 0; background: radial-gradient(80% 100% at 50% 0%, rgba(200,162,76,0.10) 0%, rgba(13,14,17,0) 70%)"></div>
+    <div style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 24px">
+      <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 56px; line-height: 0.6; color: #C8A24C">&ldquo;</div>
+      <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 23px; line-height: 1.5; font-style: italic; text-align: center; text-wrap: balance">Eu procurava um DBS com hist&oacute;rico limpo havia dois anos. A Atlas achou em onze dias.</div>
+      <div style="display: flex; align-items: center; gap: 12px">
+        <div style="width: 24px; height: 1px; background: #C8A24C"></div>
+        <div style="font-size: 10px; letter-spacing: 0.18em; color: #9A968D">RICARDO SALGADO &middot; DESDE 2019</div>
+        <div style="width: 24px; height: 1px; background: #C8A24C"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="padding: 72px 22px; background: #0A0A0B">
+    <div style="position: relative; border: 1px solid rgba(200,162,76,0.28); padding: 44px 24px; overflow: hidden">
+      <div style="position: absolute; inset: 0; background: radial-gradient(80% 120% at 50% 120%, rgba(200,162,76,0.16) 0%, rgba(10,10,11,0) 68%)"></div>
+      <div class="grain" style="position: absolute; inset: 0; opacity: 0.05; mix-blend-mode: overlay"></div>
+      <div style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 18px">
+        <div style="font-size: 9.5px; letter-spacing: 0.26em; color: #C8A24C">VISITA COM HORA MARCADA</div>
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 34px; line-height: 1.12; text-align: center; text-wrap: balance">Venha ver de perto. O showroom fecha para voc&ecirc;.</div>
+        <div style="font-size: 14.5px; line-height: 1.75; color: #9A968D; text-align: center; text-wrap: pretty">Uma hora, sem outros clientes na sala, com os carros do seu perfil j&aacute; separados.</div>
+        <div style="background: #C8A24C; color: #0A0A0B; height: 54px; align-self: stretch; display: flex; align-items: center; justify-content: center; gap: 14px; font-size: 12px; letter-spacing: 0.16em; font-weight: 500; margin-top: 6px">FALAR COM UM CONSULTOR
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0A0A0B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg>
+        </div>
+        <div style="font-size: 11px; letter-spacing: 0.12em; color: #6E6A62; text-align: center; line-height: 1.7">AV. EUROPA, 1200 &middot; S&Atilde;O PAULO<br>SEG A SEX, 9H &Agrave;S 19H</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RODAPE -->
+  <div style="background: #08080A; border-top: 1px solid rgba(244,241,234,0.07); padding: 48px 22px 28px 22px; display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; align-items: center; gap: 11px">
+      <svg width="23" height="26" viewBox="0 0 64 72" fill="none" stroke="#C8A24C" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M32 4 60 14v24c0 15.5-12 25.5-28 31C16 63.5 4 53.5 4 38V14z"/>
+        <path d="M21 51 32 21l11 30"/>
+        <path d="M25.2 39h13.6"/>
+      </svg>
+      <div style="display: flex; flex-direction: column; gap: 2px">
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 15px; letter-spacing: 0.18em; font-weight: 500">ATLAS</div>
+        <div style="font-size: 6.5px; letter-spacing: 0.40em; color: #C8A24C">LUXURY</div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <div style="font-size: 9.5px; letter-spacing: 0.24em; color: #C8A24C">COLE&Ccedil;&Atilde;O</div>
+        <a href="#" style="font-size: 14px; color: #9A968D">Superesportivos</a>
+        <a href="#" style="font-size: 14px; color: #9A968D">Gran turismo</a>
+        <a href="#" style="font-size: 14px; color: #9A968D">Cl&aacute;ssicos</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <div style="font-size: 9.5px; letter-spacing: 0.24em; color: #C8A24C">SERVI&Ccedil;OS</div>
+        <a href="#" style="font-size: 14px; color: #9A968D">Busca sob medida</a>
+        <a href="#" style="font-size: 14px; color: #9A968D">Consigna&ccedil;&atilde;o</a>
+        <a href="#" style="font-size: 14px; color: #9A968D">Garantia Atlas</a>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <div style="font-size: 9.5px; letter-spacing: 0.24em; color: #C8A24C">CONTATO</div>
+      <div style="font-size: 14px; color: #9A968D; line-height: 1.7">Av. Europa, 1200 &middot; Jardim Europa, S&atilde;o Paulo</div>
+      <a href="#" style="font-size: 14px; color: #9A968D">+55 11 4000-0000</a>
+      <a href="#" style="font-size: 14px; color: #9A968D">concierge@atlasluxury.com.br</a>
+    </div>
+
+    <div style="display: flex; gap: 12px">
+      <div style="width: 44px; height: 44px; border: 1px solid rgba(244,241,234,0.14); display: flex; align-items: center; justify-content: center">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9A968D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="16.9" cy="7.1" r="0.9" fill="#9A968D" stroke="none"/></svg>
+      </div>
+      <div style="width: 44px; height: 44px; border: 1px solid rgba(244,241,234,0.14); display: flex; align-items: center; justify-content: center">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9A968D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.6a8.4 8.4 0 0 0-7.2 12.7L3.6 20.4l4.2-1.1A8.4 8.4 0 1 0 12 3.6z"/><path d="M9 9.4c.4 3 2.6 5.2 5.6 5.6l1-1.4 1.6.8c-.4 1.4-1.8 1.9-3 1.6-2.9-.7-5.2-3-5.9-5.9-.3-1.2.2-2.6 1.6-3l.8 1.6z" fill="#9A968D" stroke="none"/></svg>
+      </div>
+      <div style="width: 44px; height: 44px; border: 1px solid rgba(244,241,234,0.14); display: flex; align-items: center; justify-content: center">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9A968D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17"/><path d="M8 10.5V17"/><circle cx="8" cy="7.4" r="0.9" fill="#9A968D" stroke="none"/><path d="M12 17v-4a2.5 2.5 0 0 1 5 0v4"/><path d="M12 10.5V17"/></svg>
+      </div>
+    </div>
+
+    <div style="height: 1px; background: rgba(244,241,234,0.07)"></div>
+    <div style="font-size: 11px; letter-spacing: 0.08em; color: #57534B; line-height: 1.8">&copy; 2026 Atlas Luxury Motors<br>CNPJ [00.000.000/0001-00]<br>Projeto conceitual &mdash; marca fict&iacute;cia</div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

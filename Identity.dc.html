@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap">
+  <style>
+    body { margin: 0; background: #0A0A0B; color: #F4F1EA;
+           font-family: 'Jost', 'Futura', 'Century Gothic', system-ui, sans-serif;
+           -webkit-font-smoothing: antialiased; }
+    a { color: #C8A24C; text-decoration: none; }
+    a:hover { color: #E6D2A8; }
+    .pad { padding-left: clamp(20px, 4.4vw, 64px); padding-right: clamp(20px, 4.4vw, 64px); }
+    .g3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+    .g2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .pal { display: flex; flex-wrap: wrap; gap: 12px; }
+    @media (max-width: 900px) {
+      .g3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .g2 { grid-template-columns: minmax(0, 1fr); }
+    }
+    @media (max-width: 620px) { .g3 { grid-template-columns: minmax(0, 1fr); } }
+    .grain { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E"); }
+  </style>
+</helmet>
+
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; background: #0A0A0B; padding: 0 0 72px 0; box-sizing: border-box; overflow-x: hidden">
+
+  <div style="position: relative; height: clamp(300px, 30vw, 380px); overflow: hidden; border-bottom: 1px solid rgba(200,162,76,0.20)">
+    <div style="position: absolute; inset: 0; background: radial-gradient(120% 90% at 50% 118%, rgba(200,162,76,0.22) 0%, rgba(200,162,76,0.05) 42%, rgba(10,10,11,0) 70%)"></div>
+    <div class="grain" style="position: absolute; inset: 0; opacity: 0.05; mix-blend-mode: overlay"></div>
+    <div style="position: relative; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px">
+      <svg width="86" height="97" viewBox="0 0 64 72" fill="none" stroke="#C8A24C" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M32 4 60 14v24c0 15.5-12 25.5-28 31C16 63.5 4 53.5 4 38V14z"/>
+        <path d="M21 51 32 21l11 30" stroke-width="1.8"/>
+        <path d="M25.2 39h13.6"/>
+        <path d="M19 39c0 2.5 5.8 4.5 13 4.5s13-2 13-4.5" opacity="0.5"/>
+      </svg>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 12px">
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: clamp(34px, 4.4vw, 54px); letter-spacing: 0.24em; font-weight: 500; text-indent: 0.24em; color: #F4F1EA">ATLAS</div>
+        <div style="display: flex; align-items: center; gap: 18px">
+          <div style="width: 84px; height: 1px; background: linear-gradient(90deg, rgba(200,162,76,0) 0%, #C8A24C 100%)"></div>
+          <div style="font-size: 15px; letter-spacing: 0.56em; text-indent: 0.56em; font-weight: 300; color: #C8A24C">LUXURY</div>
+          <div style="width: 84px; height: 1px; background: linear-gradient(90deg, #C8A24C 0%, rgba(200,162,76,0) 100%)"></div>
+        </div>
+      </div>
+      <div style="font-size: 11px; letter-spacing: 0.34em; text-indent: 0.34em; color: #6E6A62; margin-top: 8px">IDENTIDADE VISUAL &middot; V1</div>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top: clamp(40px, 5vw, 64px)">
+    <div style="font-size: 11px; letter-spacing: 0.30em; text-indent: 0.30em; color: #C8A24C; font-weight: 500">01 &mdash; ASSINATURAS</div>
+    <div class="g3" style="margin-top: 24px">
+
+      <div style="background: #101115; border: 1px solid rgba(200,162,76,0.14); padding: 40px 28px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; min-height: 210px; box-sizing: border-box">
+        <svg width="48" height="54" viewBox="0 0 64 72" fill="none" stroke="#C8A24C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M32 4 60 14v24c0 15.5-12 25.5-28 31C16 63.5 4 53.5 4 38V14z"/>
+          <path d="M21 51 32 21l11 30"/>
+          <path d="M25.2 39h13.6"/>
+          <path d="M19 39c0 2.5 5.8 4.5 13 4.5s13-2 13-4.5" opacity="0.5"/>
+        </svg>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 7px">
+          <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 26px; letter-spacing: 0.24em; text-indent: 0.24em; font-weight: 500">ATLAS</div>
+          <div style="font-size: 9px; letter-spacing: 0.52em; text-indent: 0.52em; color: #C8A24C">LUXURY</div>
+        </div>
+      </div>
+
+      <div style="background: #101115; border: 1px solid rgba(200,162,76,0.14); padding: 40px 28px; display: flex; align-items: center; justify-content: center; gap: 18px; min-height: 210px; box-sizing: border-box">
+        <svg width="40" height="45" viewBox="0 0 64 72" fill="none" stroke="#C8A24C" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M32 4 60 14v24c0 15.5-12 25.5-28 31C16 63.5 4 53.5 4 38V14z"/>
+          <path d="M21 51 32 21l11 30"/>
+          <path d="M25.2 39h13.6"/>
+        </svg>
+        <div style="display: flex; flex-direction: column; gap: 5px">
+          <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 24px; letter-spacing: 0.20em; font-weight: 500">ATLAS</div>
+          <div style="font-size: 8.5px; letter-spacing: 0.44em; color: #C8A24C">LUXURY</div>
+        </div>
+      </div>
+
+      <div style="background: #F4F1EA; border: 1px solid rgba(200,162,76,0.14); padding: 40px 28px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; min-height: 210px; box-sizing: border-box">
+        <svg width="46" height="52" viewBox="0 0 64 72" fill="none" stroke="#0A0A0B" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M32 4 60 14v24c0 15.5-12 25.5-28 31C16 63.5 4 53.5 4 38V14z"/>
+          <path d="M21 51 32 21l11 30"/>
+          <path d="M25.2 39h13.6"/>
+        </svg>
+        <div style="font-size: 9px; letter-spacing: 0.34em; text-indent: 0.34em; color: #5B564C">S&Iacute;MBOLO &middot; VERS&Atilde;O CLARA</div>
+      </div>
+
+    </div>
+    <div style="font-size: 13px; line-height: 1.7; color: #8C887F; margin-top: 16px; max-width: 760px; text-wrap: pretty">O s&iacute;mbolo &eacute; um escudo com a letra A, cujo travess&atilde;o vira uma linha de meridiano &mdash; refer&ecirc;ncia ao atlas cartogr&aacute;fico e &agrave; ideia de proced&ecirc;ncia mapeada. &Aacute;rea de respiro m&iacute;nima: metade da altura do escudo em todos os lados.</div>
+  </div>
+
+  <div class="pad" style="padding-top: clamp(36px, 4.4vw, 56px)">
+    <div style="font-size: 11px; letter-spacing: 0.30em; text-indent: 0.30em; color: #C8A24C; font-weight: 500">02 &mdash; PALETA</div>
+    <div class="pal" style="margin-top: 24px">
+      <div style="flex: 1 1 130px; display: flex; flex-direction: column">
+        <div style="height: 104px; background: #0A0A0B; border: 1px solid rgba(244,241,234,0.12)"></div>
+        <div style="padding-top: 12px; font-size: 12.5px; letter-spacing: 0.06em">Obsidiana</div>
+        <div style="font-size: 11px; color: #6E6A62; letter-spacing: 0.08em; padding-top: 3px">#0A0A0B</div>
+      </div>
+      <div style="flex: 1 1 130px; display: flex; flex-direction: column">
+        <div style="height: 104px; background: #121317; border: 1px solid rgba(244,241,234,0.10)"></div>
+        <div style="padding-top: 12px; font-size: 12.5px; letter-spacing: 0.06em">Grafite</div>
+        <div style="font-size: 11px; color: #6E6A62; letter-spacing: 0.08em; padding-top: 3px">#121317</div>
+      </div>
+      <div style="flex: 1 1 130px; display: flex; flex-direction: column">
+        <div style="height: 104px; background: #1A1C21; border: 1px solid rgba(244,241,234,0.10)"></div>
+        <div style="padding-top: 12px; font-size: 12.5px; letter-spacing: 0.06em">Carbono</div>
+        <div style="font-size: 11px; color: #6E6A62; letter-spacing: 0.08em; padding-top: 3px">#1A1C21</div>
+      </div>
+      <div style="flex: 1 1 130px; display: flex; flex-direction: column">
+        <div style="height: 104px; background: #C8A24C"></div>
+        <div style="padding-top: 12px; font-size: 12.5px; letter-spacing: 0.06em; color: #C8A24C">Ouro Atlas</div>
+        <div style="font-size: 11px; color: #6E6A62; letter-spacing: 0.08em; padding-top: 3px">#C8A24C</div>
+      </div>
+      <div style="flex: 1 1 130px; display: flex; flex-direction: column">
+        <div style="height: 104px; background: #E6D2A8"></div>
+        <div style="padding-top: 12px; font-size: 12.5px; letter-spacing: 0.06em">Champagne</div>
+        <div style="font-size: 11px; color: #6E6A62; letter-spacing: 0.08em; padding-top: 3px">#E6D2A8</div>
+      </div>
+      <div style="flex: 1 1 130px; display: flex; flex-direction: column">
+        <div style="height: 104px; background: #F4F1EA"></div>
+        <div style="padding-top: 12px; font-size: 12.5px; letter-spacing: 0.06em">Marfim</div>
+        <div style="font-size: 11px; color: #6E6A62; letter-spacing: 0.08em; padding-top: 3px">#F4F1EA</div>
+      </div>
+      <div style="flex: 1 1 130px; display: flex; flex-direction: column">
+        <div style="height: 104px; background: #9A968D"></div>
+        <div style="padding-top: 12px; font-size: 12.5px; letter-spacing: 0.06em">N&eacute;voa</div>
+        <div style="font-size: 11px; color: #6E6A62; letter-spacing: 0.08em; padding-top: 3px">#9A968D</div>
+      </div>
+    </div>
+    <div style="font-size: 13px; line-height: 1.7; color: #8C887F; margin-top: 16px; max-width: 780px; text-wrap: pretty">Obsidiana ocupa cerca de 70% da tela. Ouro Atlas &eacute; o &uacute;nico destaque &mdash; reservado a CTAs, pre&ccedil;os, micro-r&oacute;tulos e &agrave; segunda linha do t&iacute;tulo. Champagne aparece s&oacute; em hover e em uma palavra por se&ccedil;&atilde;o.</div>
+  </div>
+
+  <div class="pad" style="padding-top: clamp(36px, 4.4vw, 56px)">
+    <div style="font-size: 11px; letter-spacing: 0.30em; text-indent: 0.30em; color: #C8A24C; font-weight: 500">03 &mdash; TIPOGRAFIA</div>
+    <div class="g2" style="margin-top: 24px">
+
+      <div style="background: #101115; border: 1px solid rgba(244,241,234,0.08); padding: clamp(24px, 2.6vw, 32px) clamp(22px, 2.8vw, 34px); display: flex; flex-direction: column; gap: 18px">
+        <div style="display: flex; align-items: baseline; gap: 20px">
+          <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: clamp(54px, 6vw, 76px); line-height: 0.9; font-weight: 400">Aa</div>
+          <div style="display: flex; flex-direction: column; gap: 4px">
+            <div style="font-size: 15px; letter-spacing: 0.08em">Bodoni Moda</div>
+            <div style="font-size: 11.5px; color: #6E6A62; letter-spacing: 0.14em">DISPLAY &middot; 400 / 500 / IT&Aacute;LICO</div>
+          </div>
+        </div>
+        <div style="height: 1px; background: rgba(244,241,234,0.08)"></div>
+        <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.15; font-weight: 400">O extraordin&aacute;rio<br><span style="color: #C8A24C; font-style: italic">tem endere&ccedil;o.</span></div>
+        <div style="font-size: 12px; color: #6E6A62; letter-spacing: 0.06em">T&iacute;tulos 34&ndash;64px &middot; entrelinha 1.05 &middot; tracking &minus;0.01em</div>
+      </div>
+
+      <div style="background: #101115; border: 1px solid rgba(244,241,234,0.08); padding: clamp(24px, 2.6vw, 32px) clamp(22px, 2.8vw, 34px); display: flex; flex-direction: column; gap: 18px">
+        <div style="display: flex; align-items: baseline; gap: 20px">
+          <div style="font-size: clamp(54px, 6vw, 76px); line-height: 0.9; font-weight: 300">Aa</div>
+          <div style="display: flex; flex-direction: column; gap: 4px">
+            <div style="font-size: 15px; letter-spacing: 0.08em">Jost</div>
+            <div style="font-size: 11.5px; color: #6E6A62; letter-spacing: 0.14em">TEXTO E INTERFACE &middot; 300 / 400 / 500</div>
+          </div>
+        </div>
+        <div style="height: 1px; background: rgba(244,241,234,0.08)"></div>
+        <div style="font-size: 15.5px; line-height: 1.75; color: #9A968D; text-wrap: pretty">Superesportivos, GTs e cl&aacute;ssicos selecionados um a um, com proced&ecirc;ncia documentada e laudo independente.</div>
+        <div style="font-size: 11px; letter-spacing: 0.30em; text-indent: 0.30em; color: #C8A24C">MICRO-R&Oacute;TULO &middot; 11PX &middot; TRACKING 0.30EM</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top: clamp(36px, 4.4vw, 56px)">
+    <div style="font-size: 11px; letter-spacing: 0.30em; text-indent: 0.30em; color: #C8A24C; font-weight: 500">04 &mdash; ELEMENTOS DE INTERFACE</div>
+    <div class="g2" style="margin-top: 24px">
+
+      <div style="background: #101115; border: 1px solid rgba(244,241,234,0.08); padding: clamp(22px, 2.8vw, 34px); display: flex; flex-direction: column; gap: 22px">
+        <div style="font-size: 11px; letter-spacing: 0.22em; color: #6E6A62">BOT&Otilde;ES &middot; ALTURA 52PX &middot; SEM RAIO</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center">
+          <div style="background: #C8A24C; color: #0A0A0B; height: 52px; display: flex; align-items: center; gap: 12px; padding: 0 28px; font-size: 12.5px; letter-spacing: 0.18em; font-weight: 500">VER COLE&Ccedil;&Atilde;O
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0A0A0B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg>
+          </div>
+          <div style="border: 1px solid rgba(200,162,76,0.45); color: #F4F1EA; height: 52px; display: flex; align-items: center; gap: 12px; padding: 0 28px; font-size: 12.5px; letter-spacing: 0.18em; box-sizing: border-box">AGENDAR TEST DRIVE</div>
+        </div>
+        <div style="height: 1px; background: rgba(244,241,234,0.08)"></div>
+        <div style="font-size: 11px; letter-spacing: 0.22em; color: #6E6A62">FIO E CART&Atilde;O</div>
+        <div style="display: flex; gap: 14px; align-items: stretch">
+          <div style="flex: 1; background: #1A1C21; border: 1px solid rgba(200,162,76,0.16); padding: 20px 22px; font-size: 13px; color: #9A968D">Cart&atilde;o &mdash; fundo Carbono, fio Ouro a 16%</div>
+          <div style="width: 1px; background: linear-gradient(180deg, rgba(200,162,76,0) 0%, #C8A24C 50%, rgba(200,162,76,0) 100%)"></div>
+        </div>
+      </div>
+
+      <div style="background: #101115; border: 1px solid rgba(244,241,234,0.08); padding: clamp(22px, 2.8vw, 34px); display: flex; flex-direction: column; gap: 22px">
+        <div style="font-size: 11px; letter-spacing: 0.22em; color: #6E6A62">ICONOGRAFIA &middot; TRA&Ccedil;O 1.25 &middot; GRADE 24PX</div>
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 12px">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C8A24C" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h10l4 5.5-9 11.5L3 9z"/><path d="M3 9h18"/><path d="M7 3.5 12 20.5 17 3.5"/></svg>
+            <div style="font-size: 10.5px; color: #6E6A62; letter-spacing: 0.10em">Curadoria</div>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 12px">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C8A24C" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8 20 5.8v6.1c0 4.5-3.2 7.9-8 9.3-4.8-1.4-8-4.8-8-9.3V5.8z"/><path d="m8.6 11.9 2.5 2.5 4.4-5"/></svg>
+            <div style="font-size: 10.5px; color: #6E6A62; letter-spacing: 0.10em">Laudo</div>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 12px">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C8A24C" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 19h18.8"/><path d="M20 19a8 8 0 0 0-16 0"/><path d="M12 6.6V4.8"/><circle cx="12" cy="3.6" r="1.1"/></svg>
+            <div style="font-size: 10.5px; color: #6E6A62; letter-spacing: 0.10em">Concierge</div>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 12px">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C8A24C" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.8"/><path d="M9 13.7 8 21.2l4-2.1 4 2.1-1-7.5"/></svg>
+            <div style="font-size: 10.5px; color: #6E6A62; letter-spacing: 0.10em">Garantia</div>
+          </div>
+        </div>
+        <div style="height: 1px; background: rgba(244,241,234,0.08)"></div>
+        <div style="font-size: 13px; line-height: 1.7; color: #8C887F; text-wrap: pretty">&Iacute;cones sempre em tra&ccedil;o, nunca preenchidos, e nada de emoji na marca.</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
