@@ -16,10 +16,13 @@ Identidade visual e landing page de uma concessionária de alto padrão.
 | `PRODUCT.md` | Verdade de produto: usuários, posicionamento, o que é real e o que é ficção. |
 | `DESIGN.md` | O sistema de design — tokens, regras nomeadas, componentes e gramática de movimento. |
 | `.impeccable/design.json` | Sidecar do DESIGN.md: rampas tonais, tokens de movimento e componentes como HTML/CSS. |
+| `build-site.mjs` | Gera `dist/` a partir do `Main.dc.html`. |
+| `dist/` | O site publicável. É ele que vai pro ar. |
 
 ## Rodando
 
-Não tem build, não tem dependência. Qualquer servidor estático serve a pasta:
+Os `.dc.html` são artboards e esperam o runtime do canvas. Qualquer servidor
+estático serve a pasta:
 
 ```bash
 python -m http.server 5173
@@ -28,6 +31,27 @@ python -m http.server 5173
 Depois abra `http://localhost:5173/Main.dc.html`. Vale rolar **devagar** a primeira tela: os três mostradores das estatísticas armam em sequência conforme você percorre o hero.
 
 Abrir os arquivos com duplo clique (`file://`) também funciona, com dois avisos: o `support.js` dá 404 no console (é o runtime do canvas, não afeta a renderização) e as fontes do Google não carregam sem rede.
+
+## O site
+
+O `Main.dc.html` é a fonte da verdade; o site que vai pro ar é **gerado** a
+partir dele. Editou o artboard, rode:
+
+```bash
+node build-site.mjs
+```
+
+O build desembrulha o artboard num HTML comum — `<helmet>` vira `<head>`, o
+`support.js` sai —, acrescenta `<title>`, descrição e Open Graph, copia as
+quatro fotos e põe no topo a faixa que avisa que a marca é fictícia. O rodapé
+já dizia isso, mas rodapé é o último lugar que alguém lê.
+
+A responsividade não é do build: ela já está no artboard, que é fluido de 320px
+a 4K. Conferido em 1440, 1100, 768 e 375 — sem rolagem lateral em nenhuma.
+
+## No ar
+
+<https://atlas-luxury.vercel.app> — deploy a cada push na `main`.
 
 ## O sistema, em uma tela
 
